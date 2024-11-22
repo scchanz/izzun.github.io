@@ -430,3 +430,21 @@ footer {
 footer p {
   text-align: center;
 }
+
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Elemen otomatis pindah baris jika tidak cukup ruang */
+}
+
+.item {
+  flex: 1 1 300px; /* Setiap item memiliki minimal 300px dan berbagi ruang */
+  margin: 10px;
+}
+
+/* Gaya untuk layar dengan lebar kurang dari 768px (tablet dan hp) */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+    margin: 10px;
+  }
+}
